@@ -1,21 +1,6 @@
-# tpls
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+启动步骤：
+   npm run install
+   npm run dev
+技术概要：
+   1.封装全局axios请求函数
+   2.全局axios函数请求loding动画
