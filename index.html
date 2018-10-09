@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--浏览器兼容模式用最新的文档渲染模式-->
+	<meta http-equiv="X-UA-Compatible" content ="IE=edge"/>
+	<title>Vue_loding</title>
+	<style>
+		body{
+			margin:0;
+		}
+		/*数据加载动画*/
+		.loader--style3{
+			position: fixed;
+			top:0;
+			width:100%;
+			height:100%;
+			background:rgba(0,0,0,0.3);
+			z-index:10000;
+			display: none;
+		}
+		svg{
+			margin-top:20%;
+		}
+		.loding-div{
+			text-align: center;
+			border-radius: 20px;
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			color:#fff!important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="app"></div>
+	<div class="loader loader--style3" id='login'>
+		<div class='loding-div'>
+			<svg id="loader-1" x="0px" y="0px"
+			width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+			<path fill="#FEB101" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+				<animateTransform attributeType="xml"
+				attributeName="transform"
+				type="rotate"
+				from="0 25 25"
+				to="360 25 25"
+				dur="0.6s"
+				repeatCount="indefinite"/>
+			</path>
+		</svg>
+		<p>请稍后...</p>
+		</div>
+	</div>	
+</body>
+</html>
