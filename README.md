@@ -1,7 +1,9 @@
 启动步骤：
-
+  
    npm run install
    
+   npm install --save axios  
+
    npm run dev
    
    
